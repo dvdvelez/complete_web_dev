@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>forms</title>
+    </head>
+
+    <body>
+        <forms method="get"> <!--Normally you wouldn't use "get" becuase your password and email would show up in the URL once you hit "send". For the purposes of this training exercise however, use the "get" method.-->
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Email" size="30px" maxlength="100" id="email">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" size="30px" maxlength="100" id="password">
+
+            <input type="submit" value="Login">
+
+            <!--
+                "label" attribute is to put the label names outside of the input boxes and you also create an ID with the same label name to link it for stylization later in css.
+
+                "placeholder" attribute is to place a temporary name inside the input boxes until you start typing input into the boxes.
+
+                "size" attribute is to change the size of the input boxes.
+
+                By default, the submit button will be named "submit" unless you change it to something else like value="Login".
+            -->
+
+        </forms>
+
+
+
+    </body>
+
+
+</html>
