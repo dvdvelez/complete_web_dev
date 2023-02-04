@@ -1,4 +1,4 @@
-#container {
+#container{
     width: 1200px;
     border: 2px solid grey;
     margin: 0 auto;
@@ -7,16 +7,48 @@
 h1 a{
     font-size: 50px;
     font-weight: 100;
-    color: purple;
+    color: #992af3;
     text-decoration: none;
 
     /* you specify "a" so that you can directly change the link text specifically and not every link text */
+}
+
+#header{
+    height: 100px;
+    padding: 10px 0px; /* First value is for top/bottom; second value is for left/right */
 }
 
 #brand{
     float: left;
 }
 
-#searchbox {
+#searchbox{
     float: right;
+    background: linear-gradient(#42c73d, #83df7f);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px; /* Values go from top, right, bottom, left */
+    margin-top: 20px;
+}
+
+.search_text_box{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #ff8a00;
+    background: white url(graphics/search_logo.png) right center no-repeat; /* Multiple attributes in one line!!! */
+}   
+
+.search_button{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: #992af3;
+}
+
+.clear{
+    clear: both;
+    /* Clear property is used to specify whether an element should be next to floating elements or it should be below them (clear). We can apply the clear property to both floating and non-floating elements. This property has four values: none, left, right, and both. "None" is the default value. It is good practice to use this property after floating elements*/
 }
