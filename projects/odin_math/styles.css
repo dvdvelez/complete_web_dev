@@ -4,18 +4,17 @@
     margin: 0 auto;
 }
 
-h1 a{
+h1 a{ /* you specify "a" so that you can directly change the link text specifically and not every link text */
+
     font-size: 50px;
     font-weight: 100;
     color: #992af3;
     text-decoration: none;
-
-    /* you specify "a" so that you can directly change the link text specifically and not every link text */
 }
 
 #header{
     height: 100px;
-    padding: 10px 0px; /* First value is for top/bottom; second value is for left/right */
+    padding: 10px 0px; /* First value is for top/bottom; second value is for left/right. Compare with padding values under #searchbox styling below */
 }
 
 #brand{
@@ -50,5 +49,51 @@ h1 a{
 
 .clear{
     clear: both;
-    /* Clear property is used to specify whether an element should be next to floating elements or it should be below them (clear). We can apply the clear property to both floating and non-floating elements. This property has four values: none, left, right, and both. "None" is the default value. It is good practice to use this property after floating elements*/
+    /* Clear property is used to specify whether an element should be next to floating elements or it should be below them (clear). We can apply the clear property to both floating and non-floating elements. This property has four values: none, left, right, and both. "None" is the default value. It is good practice to use this property after floating elements */
+}
+
+#menu{
+    height: 70px;
+    background: linear-gradient(#ff8a00, #ffd460);
+    padding: 6px 0px;
+}
+
+#menu ul li{ /*This is how you target elements sepecifically without targetting ALL of the same elements */
+
+    list-style: none; /* This is to get rid of bullet points */
+    float: left;
+    padding: 0px 30px;
+    height: 30px;
+    border-right: 1px solid #992af3; /* This is to add the dividing line between each menu link. Notice that you are also specifying the border line style and color!!! */
+}
+
+#menu ul li:last-child{ /* This is to remove the right border from the last menu link. Notice that you must NOT put a space after the colon between "li" and "last-child" */
+
+    border-right: none;
+}
+
+#menu ul li a{ /* Here you are going one step further and targetting the links in the lists themselves */
+
+    text-decoration: none; /* This is to remove the underlines from the links */
+    text-transform: uppercase;
+    font-size: 17px; /* By default the text size is 16px in Chrome */
+    line-height: 30px; /* This is to center the menu links to the center lines (right-border lines) */
+    color: #5a0071;
+
+    transition: font-size 0.3s ease;
+    /* This is to control the speed of font-size transition from 17px to 20px whenever you over the menu links (except the home link; see note below). The 0.3s is the transition speed; the "ease" attribute means that the transition will still take place within the 0.3s inidicated but the transition will start slow and then gradually speed up at the end. The other transition attribute is "linear" which means the transition speed is constant whereas "ease" is acceleration */
+
+    /* The following lines are for the different web-browsers */
+    -webkit-transition: font-size 0.3s ease; /* safari */
+    -moz-transition: font-size 0.3s ease; /* mozilla firefox */
+    -o-transition: font-size 0.3s ease; /* opera */
+    -ms-transition: font-size 0.3s ease; /* microsoft explorer/edge? */
+}
+
+#menu ul li a:hover, #menu ul li a.active_link{
+    /* The second selector is to select the links in class "active_link", in this case the home link (see index.html). It will have the same hover stylization as the other links but it will be static, meaning it will always have the following stylization */
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #992af3;
 }
