@@ -1,6 +1,6 @@
 #container{
     width: 1200px;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
     margin: 0 auto;
 }
 
@@ -24,6 +24,8 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
 #searchbox{
     float: right;
     background: linear-gradient(#42c73d, #83df7f);
+    /* You use "background" instead of "background-color" so that you can use the linear-gradient attribute */
+
     width: 400px;
     height: 50px;
     padding: 20px 20px 0px 20px; /* Values go from top, right, bottom, left */
@@ -81,7 +83,7 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
     color: #5a0071;
 
     transition: font-size 0.3s ease;
-    /* This is to control the speed of font-size transition from 17px to 20px whenever you over the menu links (except the home link; see note below). The 0.3s is the transition speed; the "ease" attribute means that the transition will still take place within the 0.3s inidicated but the transition will start slow and then gradually speed up at the end. The other transition attribute is "linear" which means the transition speed is constant whereas "ease" is acceleration */
+    /* This is to control the speed of font-size transition from 17px to 20px whenever you hover the menu links (except the home link; see note below). The 0.3s is the transition speed; the "ease" attribute means that the transition will still take place within the 0.3s inidicated but the transition will start slow and then gradually speed up at the end. The other transition attribute is "linear" which means the transition speed is constant whereas "ease" is acceleration */
 
     /* The following lines are for the different web-browsers */
     -webkit-transition: font-size 0.3s ease; /* safari */
@@ -96,4 +98,22 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
     font-size: 20px;
     font-weight: bold;
     color: #992af3;
+}
+
+#introduction{
+    background: linear-gradient(#42c73d, #83df7f);
+    padding: 30px;
+    margin: 15px 0px;
+}
+
+#introduction h3{
+    font-size: 45px;
+    font-weight: normal;
+    color: #095100;
+}
+
+#introduction p{
+    font-size: 25px;
+    color: #095100;
+    text-align: justify;
 }
