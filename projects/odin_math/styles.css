@@ -57,12 +57,15 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
 #menu{
     height: 70px;
     background: linear-gradient(#ff8a00, #ffd460);
-    padding: 6px 0px;
+    padding: 7px 0px;
+}
+
+ul{
+    list-style: none; /* This is to get rid of ALL bullet points in the webpage */
 }
 
 #menu ul li{ /*This is how you target elements sepecifically without targetting ALL of the same elements */
 
-    list-style: none; /* This is to get rid of bullet points */
     float: left;
     padding: 0px 30px;
     height: 30px;
@@ -116,4 +119,48 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
     font-size: 25px;
     color: #095100;
     text-align: justify;
+}
+
+.sidebars{
+    height: 700px;
+    width: 450px;
+    border: 1px solid #42c73d;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.sidebars h3{
+    color: #992af3;
+    font-size: 30px;
+}
+
+#left_sidebar ul li{
+    list-style-image: url(graphics/arrow.png);
+
+}
+
+.sidebars ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5a0071;
+    transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease; /* safari */
+    -moz-transition: font-size 0.3s ease; /* mozilla firefox */
+    -o-transition: font-size 0.3s ease; /* opera */
+    -ms-transition: font-size 0.3s ease; /* microsoft explorer/edge? */
+}
+
+.sidebars ul li a:hover, .sidebars ul li a.active{
+    text-decoration: none;
+    color: #992af3;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#left_sidebar{
+    float: left;
+}
+
+#right_sidebar{
+    float: right;
 }
