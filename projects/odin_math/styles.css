@@ -1,3 +1,7 @@
+body{
+    font: Arial, Helvetica, sans-serif;
+}
+
 #container{
     width: 1200px;
     /* border: 2px solid grey; */
@@ -26,6 +30,11 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
     background: linear-gradient(#42c73d, #83df7f);
     /* You use "background" instead of "background-color" so that you can use the linear-gradient attribute */
 
+    background: -webkit-linear-gradient(#42c73d, #83df7f);
+    background: -o-linear-gradient(#42c73d, #83df7f);
+    background: -moz-linear-gradient(#42c73d, #83df7f);
+    /* Whenever you use some properties like linear gradients for examply, make sure to add compatibility for the other different browsers...it is standard practice if you want your website to function as intended for the majority of browsers! First one is Safari followed by Opera, and Firefox. Internet Explorer uses the same syntax for this attribute as the default (which is Google in this case) */
+
     width: 400px;
     height: 50px;
     padding: 20px 20px 0px 20px; /* Values go from top, right, bottom, left */
@@ -39,6 +48,7 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
     font-size: 15px;
     color: #ff8a00;
     background: white url(graphics/search_logo.png) right center no-repeat; /* Multiple attributes in one line!!! */
+    border: 1px solid #ff8a00;
 }   
 
 .search_button{
@@ -57,6 +67,9 @@ h1 a{ /* you specify "a" so that you can directly change the link text specifica
 #menu{
     height: 70px;
     background: linear-gradient(#ff8a00, #ffd460);
+    background: -webkit-linear-gradient(#ff8a00, #ffd460);
+    background: -o-linear-gradient(#ff8a00, #ffd460);
+    background: -moz-linear-gradient(#ff8a00, #ffd460);
     padding: 7px 0px;
 }
 
@@ -105,6 +118,9 @@ ul{
 
 #introduction{
     background: linear-gradient(#42c73d, #83df7f);
+    background: -webkit-linear-gradient(#42c73d, #83df7f);
+    background: -o-linear-gradient(#42c73d, #83df7f);
+    background: -moz-linear-gradient(#42c73d, #83df7f);
     padding: 30px;
     margin: 15px 0px;
 }
@@ -166,4 +182,14 @@ ul{
 
 #right_sidebar{
     float: right;
+}
+
+footer{
+    height: 60px;
+    background: linear-gradient(#ff8a00, #ffd460);
+    background: -webkit-linear-gradient(#ff8a00, #ffd460);
+    background: -o-linear-gradient(#ff8a00, #ffd460);
+    background: -moz-linear-gradient(#ff8a00, #ffd460);
+    margin: 15px 0px;
+    padding: 10px 30px;
 }
