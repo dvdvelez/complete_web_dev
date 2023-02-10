@@ -136,7 +136,10 @@ ul{
 
 #left_sidebar ul li{
     list-style-image: url(graphics/arrow.png);
+}
 
+#right_sidebar ul li{
+    list-style-image: url(graphics/checkmark.png);
 }
 
 .sidebars ul li a{
